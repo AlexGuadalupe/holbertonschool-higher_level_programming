@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Task 0: Add integers"""
+
 
 def add_integer(a, b=98):
     """ Function that adds 2 integers."""
