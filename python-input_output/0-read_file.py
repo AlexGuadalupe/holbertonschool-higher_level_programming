@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A function that writes a string to a text file and returns the number of characters written."""
+"""A function that writes a string to a text file and returns the number
+of characters written."""
 
 
 def read_file(filename=""):
