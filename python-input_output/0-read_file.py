@@ -8,5 +8,4 @@ def read_file(filename=""):
         content = file.read()
         print(content)
         file.close()
-    num_characters = len(content)
-    return num_characters
+    return
