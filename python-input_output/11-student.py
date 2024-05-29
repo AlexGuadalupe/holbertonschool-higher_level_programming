@@ -25,8 +25,7 @@ class Student:
                 pass
         return Newdict
 
-
-def reload_from_json(self, json):
+    def reload_from_json(self, json):
     """ replace all attr of student """
     for key in json:
         try:
