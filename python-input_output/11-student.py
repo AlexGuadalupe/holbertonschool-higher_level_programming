@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-"""a class Student"""
+""" a basic class """
 
 
 class Student:
-    """a class Student that defines a student
-    (9-student.py)"""
+    """ student class """
 
     def __init__(self, first_name, last_name, age):
-        """initializes the student instance"""
+        """ initializes the students class """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """returns the dictionary"""
+        """ returns dict """
         if attrs is None:
             return self.__dict__
 
@@ -23,12 +22,12 @@ class Student:
                 Newdict[a] = self.__dict__[a]
             except KeyError:
                 pass
-        return Newdict
+            return Newdict
 
     def reload_from_json(self, json):
-    """ replace all attr of student """
-    for key in json:
-        try:
-            setattr(self, key, json[key])
-        except KeyError:
-            pass
+        """ replace all attr of student """
+        for key in json:
+            try:
+                setattr(self, key, json[key])
+            except KeyError:
+                pass
