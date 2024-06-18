@@ -1,3 +1,3 @@
--- A script that lists all the tables of a database in your MySQL
-USE hbtn_test_0c_0;
+-- Lists all the table of a database in MySQL
+-- Using SHOW
 SHOW TABLES;
